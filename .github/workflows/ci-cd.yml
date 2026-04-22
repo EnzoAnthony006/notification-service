@@ -33,5 +33,5 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: |
-            seuusuario/notification-service:v${{ github.run_number }}
-            seuusuario/notification-service:latest
+            EnzoAnthony006/notification-service:v${{ github.run_number }}
+            EnzoAnthony006/notification-service:latest
