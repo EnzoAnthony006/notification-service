@@ -17,6 +17,9 @@ jobs:
           java-version: '21'
           distribution: 'temurin'
 
+      - name: Permissão no mvnw
+        run: chmod +x mvnw
+
       - name: Build com Maven
         run: ./mvnw clean package -DskipTests
 
@@ -33,5 +36,5 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: |
-            EnzoAnthony006/notification-service:v${{ github.run_number }}
-            EnzoAnthony006/notification-service:latest
+            enzoanthony006/notification-service:v${{ github.run_number }}
+            enzoanthony006/notification-service:latest
